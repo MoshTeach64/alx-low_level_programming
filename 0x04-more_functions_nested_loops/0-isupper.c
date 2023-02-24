@@ -8,11 +8,27 @@
 
 int _isupper(int c)
 {
-	if ((c >= 'A') && (c <= 'Z'))
+/**
+* {
+*	if ((c >= 'A') && (c <= 'Z'))
+*	{
+*		return (1);
+*	}
+*
+*	return (0);
+* }
+*/
+	int upper;
+
+	for (upper = 'A'; upper <= 'Z'; upper++)
 	{
+	if (c == upper)
 		return (1);
 	}
-
+	if (c != upper)
+	{
+		return (0);
+	}
 	return (0);
 }
 
