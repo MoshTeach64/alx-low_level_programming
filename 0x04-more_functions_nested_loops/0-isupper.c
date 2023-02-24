@@ -8,16 +8,10 @@
 
 int _isupper(int c)
 {
-	int upper;
-
-	for (upper = 'A'; upper <= 'Z'; upper++)
+	if (c >= 65 && c <= 90)
 	{
-	if (c == upper)
 		return (1);
 	}
-	if (c != upper)
-	{
+	else
 		return (0);
-	}
-	return (0);
 }
