@@ -5,26 +5,44 @@
  * followed by a new line
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i = 2;
-	long int a = 1;
-	long int b = a + 1;
-	long int c = a + b;
+	int i;
+	int num;
+	int digit;
 
-	printf("%ld, %ld, ", a, b);
-	while (i < 50)
+	int fib[50];
+
+	fib[0] = 1;
+	fib[1] = 1;
+	putchar('1');
+	putchar(',');
+	putchar(' ');
+	putchar('1');
+	putchar(',');
+	putchar(' ');
+	for (i = 2; i < 50; i++)
 	{
-		printf("%ld", c);
-		i++;
-		a = b;
-		b = c;
-		c = a + b;
-		if (i < 50)
-		{
-			printf(", ");
-		}
+	fib[i] = fib[i - 1] + fib[i - 2];
+		num = fib[i];
+	digit = 1;
+
+	while (num > 0)
+	{
+		digit *= 10;
+		num /= 10;
 	}
-	printf("\n");
+		digit /= 10;
+	while (digit > 0)
+	{
+		putchar(num / digit + '0');
+		num %= digit;
+		digit /= 10;
+	}
+		putchar(',');
+		putchar(' ');
+	}
+	putchar('\n');
 	return (0);
 }
