@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+* main - Entry point
+*
+* Description - print to the output
+* Return: Always '0' (success)
+*/
 int main(void)
 {
 	_puts("\"At the end of the day, my goal was to be the best
