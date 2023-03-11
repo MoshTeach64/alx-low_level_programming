@@ -4,9 +4,10 @@
 /**
  * main - two parameters taken
  *
- * Description - to count number of array pass
- *
- * Return: Always '0' (success)
+ * Description - funtion to take two argument
+ * @argc - argument to count
+ * @*argv[] - arguement vector
+ * Return: Always '0'(success)
  */
 int main(int argc, char *argv[])
 {
