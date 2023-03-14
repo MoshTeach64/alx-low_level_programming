@@ -2,13 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - two parameters taken
- *
- * Description - funtion to take two argument
- * @argc - argument to count
- * @*argv[] - arguement vector
- * Return: Always '0'(success)
- */
+* main - Entry point
+* @argc: the number of arguments passed into the program
+* @argv: an array of the arguments passed
+* Return: Always '0'(success)
+*/
 int main(int argc, char *argv[])
 {
 	int cents;
