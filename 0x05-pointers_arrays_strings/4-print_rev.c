@@ -1,16 +1,14 @@
 #include "main.h"
 
-/**#include <stdio.h>**/
-
 /**
  * print_rev - prints a string in reverse
- *  @s: pointer to the string to print
+ * @s: pointer to the string to print
  *  Return: void
  */
 
 void print_rev(char *s)
 {
-	int len;
+	int len = 0;
 	int counter;
 
 	len = 0;
@@ -18,7 +16,6 @@ void print_rev(char *s)
 	{
 		len++;
 	}
-	/**printf("%d", len);**/
 
 	for (counter = (len - 1); counter >= 0; counter--)
 	{
