@@ -7,14 +7,23 @@
  */
 
 void _puts(char *str)
-{
-	int counter;
+/*{*/
+	/*int counter;*/
 
-	counter = 0;
-	while (*(str + counter) != '\0')
+	/*counter = 0;*/
+	/*while (*(str + counter) != '\0')*/
+	/*{*/
+		/*putchar(*(str + counter));*/
+		/*counter++;*/
+	/*}*/
+{
+	int i;
+
+	for (i = 0; str[i]; i++)
 	{
-		putchar(*(str + counter));
-		counter++;
+		putchar(str[i]);
 	}
-	putchar('\n');
+	{
+		putchar('\n');
+	}
 }
