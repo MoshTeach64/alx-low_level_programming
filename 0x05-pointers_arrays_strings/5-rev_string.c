@@ -6,7 +6,7 @@
  * Return: no return.
  */
 void rev_string(char *s)
-{
+/*{
 	int count = 0, i, j;
 	char *str, temp;
 
@@ -25,4 +25,12 @@ void rev_string(char *s)
 			*(str + (j - 1)) = temp;
 		}
 	}
+}*/
+{
+	int i, len, temp;
+	
+	len = strlen(s);
+	
+	for ()
+	
 }
