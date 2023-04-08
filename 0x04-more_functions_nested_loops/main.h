@@ -1,5 +1,7 @@
 #ifndef _MAIN_H
 #define _MAIN_H
+
+#include <stdio.h>
 /**
  * main - header file for prototypes
  * void prototypes(void)
